@@ -31,7 +31,7 @@ run_analysis <- function() {
   s.t <- read.table("UCI HAR Dataset/test/subject_test.txt");
   s.r <- read.table("UCI HAR Dataset/train/subject_train.txt");
 
-  # Step 5: bind activity, subject and measurement columns; naming the rows
+  # Step 5: bind activity, subject and measurement columns; naming the columns
   ucid1 <- cbind(y.t$V2,s.t,x.t);
   names(ucid1) <- c("activity", "subject", uciname);
   ucid2 <- cbind(y.r$V2,s.r,x.r);
